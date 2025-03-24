@@ -1,0 +1,82 @@
+ <!-- 1.Block Elements
+Block elements take up the full width available and start on a new line. 
+They stack vertically. Common block elements include <div>, <h1>, <p>, and <ul>.
+Example: -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Elements</title>
+    <style>
+        .block {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Block Element 1</div>
+    <div class="block">Block Element 2</div>
+    <p class="block">This is a paragraph as a block element.</p>
+</body>
+</html>
+<!-- 2. Inline Elements
+Inline elements do not start on a new line and only take up as much width as necessary. They can sit next to each other. Common inline elements include <span>, <a>, and <strong>.
+
+Example: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Elements</title>
+    <style>
+        .inline {
+            background-color: lightgreen;
+            padding: 5px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a <span class="inline">span</span> inside a paragraph.</p>
+    <p>Here is a <a class="inline" href="#">link</a> as an inline element.</p>
+</body>
+</html>
+<!-- 3. Flexbox
+Flexbox (Flexible Box Layout) is a layout model that allows you to design a complex layout structure in a more efficient and predictable way than traditional models. It is particularly useful for aligning items in a row or column.
+
+Example: -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* Align items with space between */
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .flex-item {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 5px;
+            flex: 1; /* Grow to fill space */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</body>
+</html> -->
+<!-- 4. CSS Grid
+CSS Grid is a two-dimensional layout system that allows you to create complex layouts with rows and columns. It provides more control over the layout than Flexbox, especially for larger designs.
+
+Example: -->

@@ -1,0 +1,76 @@
+1_style.css
+
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.nav-containner {
+    background-color: #333; /* Dark background for the nav container */
+    padding: 20px; /* Padding around the nav container */
+}
+
+h1 {
+    color: white; /* White text for the heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.nav1 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.nav1 ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    display: flex; /* Display list items in a row */
+}
+
+.nav1 li {
+    margin: 0 15px; /* Space between list items */
+}
+
+.nav1 a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* Position relative for the underline effect */
+}
+
+.nav1 a::after {
+    content: ""; /* Create a pseudo-element for the underline */
+    display: block; /* Make it a block element */
+    height: 2px; /* Height of the underline */
+    background: orange; /* Color of the underline */
+    width: 0; /* Start with width 0 */
+    transition: width 0.3s; /* Smooth transition for the width */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align to the left */
+    bottom: -5px; /* Position it below the text */
+}
+
+.nav1 a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+button {
+    background-color: orange; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-left: 20px; /* Space between the button and nav items */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #ff8c00; /* Darker orange on hover */
+}
